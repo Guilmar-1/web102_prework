@@ -148,10 +148,10 @@ console.log(unfundedGames.length);
 const numUnfundedGames = unfundedGames.length;
 const descriptionText = `A total of $${totalRaised.toLocaleString()} has been raised for ${totalGames} games. ${numUnfundedGames === 1 ? 'One game remains unfunded.' : `${numUnfundedGames} games remain unfunded.`}`;
 
-descriptionContainer.innerHTML = descriptionText;
+
 
 // create a new DOM element containing the template string and append it to the description container
-const newParagraph = document.createElement('p');
+const newParagraph = document.createElement('d');
 newParagraph.innerHTML = descriptionText; 
 
 descriptionContainer.appendChild(newParagraph);
